@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <script src="./node_modules/requirejs/require.js"></script>
+  </head>
+  <body>
+    <script>
+			requirejs.config(
+				{
+					baseUrl: 'generated',
+					paths: {
+						mustache: '../node_modules/mustache/mustache',
+            focusable: '../node_modules/sgj_focus/generated/focusable',
+            focus_mgr: '../node_modules/sgj_focus/generated/focus_mgr'
+          }
+        } )
+			requirejs(['mustache', 'focus_mgr', 'markup_1'],
+				function(Mustache, focusMgr, markup1) {
+					focusMgr.register(Mustache)
+					markup1.register(Mustache)
+					//markup2.register(Mustache)
+	  		} );
+    </script>
+    <sgj-focusmgr>
+      <sample-markup></sample-markup>
+    </sgj-focusmgr>

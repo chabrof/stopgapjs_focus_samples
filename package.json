@@ -1,0 +1,19 @@
+{
+  "name": "sgj_focus_samples",
+  "description": "Samples for sgj_focus (see : https://github.com/chabrof/stopgapjs_focus)",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": {
+    "name": "François Chabrou",
+    "email": "developer@stopgapjs.org",
+    "url": "http://www.stopgapjs.org"
+  },
+  "main": "./index.html",
+  "homepage": "http://www.stopgapjs.org/#focus",
+  "dependencies": {
+    "requirejs": ">=2.1.14",
+    "mustache": ">=2.2.1",
+    "sgj_focus": "git+https://github.com/chabrof/stopgapjs_focus.git#master"
+  },
+  "readme": "#focus"
+}
